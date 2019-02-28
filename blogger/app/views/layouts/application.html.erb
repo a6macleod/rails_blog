@@ -13,6 +13,14 @@
     <p class="flash">
       <%= flash.notice %>
     </p>
+    <div class="sidebar">
+      <p>
+        <p><%= link_to "Articles", articles_path %></p>
+        <p><%= link_to "Authors", authors_path %></p>
+        <p><%= link_to "Tags", tags_path %></p>
+
+      </p>
+    </div>
     <div id="container">
       <div id="content">
         <%= yield %>
